@@ -1,7 +1,7 @@
 import select
 
 from src.config.config import HOST, PORT
-from src.utils.soket_handle import create_server_socket, accept_new_connection
+from src.utils.socket_handle import create_server_socket, accept_new_connection
 from src.utils.client_handle import handle_client_message
 
 

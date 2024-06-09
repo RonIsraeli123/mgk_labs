@@ -1,4 +1,4 @@
-from src.utils.soket_handle import broadcast
+from src.utils.socket_handle import broadcast
 from src.utils.openai_handle import process_with_openai
 
 
