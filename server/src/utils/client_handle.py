@@ -33,7 +33,8 @@ def handle_client_message(message: str, clients: list, sender):
                 # Create a new message that contain a 'header' with the msg size
                 message_with_size = message_size + response
                 sender.send(message_with_size.encode())
-            except:
+            except Exception as error:
+                print(error)
                 response = "open api fail to process your message"
                 sender.send(response.encode())
     except:
